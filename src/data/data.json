@@ -1,0 +1,229 @@
+{
+  "color":{
+    "top":{
+      "navy": {
+        "hex": "#2d448e",
+        "relations": {
+          "skyblue": "😄",
+          "navy": "🙁",
+          "black": "🤔",
+          "beige": "😄",
+          "cream": "🙂",
+          "khaki": "🙂"
+        }
+      },
+      "green": {
+        "hex": "#7bdb89",
+        "relations": {
+          "skyblue": "😄",
+          "navy": "🙂",
+          "black": "🤔",
+          "beige": "🙂",
+          "cream": "🙂",
+          "khaki": "🙁"
+        }
+      },
+      "yellow": {
+        "hex": "#FFE24F",
+        "relations": {
+          "skyblue": "🙂",
+          "navy": "😄",
+          "black": "😄",
+          "beige": "🤔",
+          "cream": "🙂",
+          "khaki": "🙂"
+        }
+      },
+      "blue": {
+        "hex": "#3372ff",
+        "relations": {
+          "skyblue": "🤔",
+          "navy": "😄",
+          "black": "😄",
+          "beige": "🤔",
+          "cream": "🙂",
+          "khaki": "🙁"
+        }
+      },
+      "beige": {
+        "hex": "#ccb5a3",
+        "relations": {
+          "skyblue": "🤔",
+          "navy": "🙂",
+          "black": "😄",
+          "beige": "🙁",
+          "cream": "😄",
+          "khaki": "🙂"
+        }
+      },
+      "red": {
+        "hex": "#ff3131",
+        "relations": {
+          "skyblue": "😄",
+          "navy": "🤔",
+          "black": "😄",
+          "beige": "🙂",
+          "cream": "😄", 
+          "khaki": "🙁"
+        }
+      }
+    },
+    "bottom":{
+      "skyblue": {
+        "hex": "#99beff",
+        "relations": {
+          "navy": "😄",
+          "green": "😄",
+          "yellow": "🙂",
+          "blue": "🤔",
+          "beige": "🤔",
+          "red": "😄"
+        }
+      },
+      "navy": {
+        "hex": "#2d448e",
+        "relations": {
+          "navy": "🙁",
+          "green": "🙂",
+          "yellow": "😄",
+          "blue": "😄",
+          "beige": "🙂",
+          "red": "🤔"
+        }
+      },
+      "black": {
+        "hex": "#423e3f",
+        "relations": {
+          "navy": "🤔",
+          "green": "🤔",
+          "yellow": "😄",
+          "blue": "😄",
+          "beige": "😄",
+          "red": "😄"
+        }
+      },
+      "beige": {
+        "hex": "#ccb5a3",
+        "relations": {
+          "navy": "😄",
+          "green": "🙂",
+          "yellow": "🤔",
+          "blue": "🤔",
+          "beige": "🙁",
+          "red": "🙂"
+        }
+      },
+      "cream": {
+        "hex": "#f4ecdc",
+        "relations": {
+          "navy": "🙂",
+          "green": "🙂",
+          "yellow": "🙂",
+          "blue": "🙂",
+          "beige": "😄",
+          "red": "😄"
+        }
+      },
+      "khaki": {
+        "hex": "#3f6d3a",
+        "relations": {
+          "navy": "🙂",
+          "green": "🙁",
+          "yellow": "🙂",
+          "blue": "🙁",
+          "beige": "🙂",
+          "red": "🙁"
+        }
+      }
+    }
+  },
+  "type":{
+    "sleeveless":{
+      "src":"./image/top/sleeveless.svg",
+      "alt":"민소매",
+      "defaultColor":"#ffffff"
+    },
+    "shortSleeve":{ 
+      "src":"./image/top/tshist_half.svg",
+      "alt":"반소매",
+      "defaultColor":"#ffffff"
+    },
+    "longSleeve":{
+      "src":"./image/top/tshist_long.svg",
+      "alt":"긴소매",
+      "defaultColor":"#ffffff"
+    },
+    "longPants":{
+      "src":"./image/bottom/pants_long.svg",
+      "alt":"긴바지",
+      "defaultColor":"#423e3f"
+    },
+    "shortPants":{
+      "src":"./image/bottom/pants_short.svg",
+      "alt":"반바지",
+      "defaultColor":"#423e3f"
+    },
+    "longSkirt":{
+      "src":"./image/bottom/skirt_long.svg",
+      "alt":"긴치마",
+      "defaultColor":"#423e3f"
+    },
+    "shortSkirt":{
+      "src":"./image/bottom/skirt_short.svg",
+      "alt":"짧은치마",
+      "defaultColor":"#423e3f"
+    },
+    "cardigan":{
+      "src":"./image/outer/cardigan.svg",
+      "alt":"가디건",
+      "defaultColor":"#ccb5a3"
+    },
+    "coat":{
+      "src":"./image/outer/coat.svg",
+      "alt":"코트",
+      "defaultColor":"#ccb5a3"
+    },
+    "downJacket":{
+      "src":"./image/outer/down_jacket.svg",
+      "alt":"패딩",
+      "defaultColor":"#ccb5a3"
+    }
+  },
+  "suggestion":[
+    {
+      "range":{"min":30, "max":null},
+      "top":"sleeveless",
+      "bottom":"shortSkirt"
+    },
+    {
+      "range":{"min":23, "max":29},
+      "top":"shortSleeve",
+      "bottom":"shortPants"
+    },
+    {
+      "range":{"min":20, "max":22},
+      "top":"shortSleeve",
+      "bottom":"longSkirt"
+    },
+    {
+      "range":{"min":17, "max":19},
+      "top":"longSleeve",
+      "bottom":"longPants"
+    },
+    {
+      "range":{"min":10, "max":16},
+      "top":"cardigan",
+      "bottom":"longPants"
+    },
+    {
+      "range":{"min":5, "max":9},
+      "top":"coat",
+      "bottom":"longPants"
+    },
+    {
+      "range":{"min":null, "max":4},
+      "top":"downJacket",
+      "bottom":"longPants"
+    }
+  ]
+}
