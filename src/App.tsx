@@ -33,7 +33,7 @@ function App() {
   )
   : null;
 
- function handleTopColor(name: string, value: { hex: string; relations: Record<string,string> }) {
+ function handleTopColor( value: { hex: string; relations: Record<string,string> }) {
   setOutfit((prev) => ({
     ...prev,
     topColor: value.hex,
@@ -44,7 +44,7 @@ function App() {
   }));
 }
 
-function handleBottomColor(name: string, value: { hex: string; relations: Record<string,string> }) {
+function handleBottomColor(value: { hex: string; relations: Record<string,string> }) {
   setOutfit((prev) => ({
     ...prev,
     bottomColor: value.hex,
@@ -61,7 +61,7 @@ function handleBottomColor(name: string, value: { hex: string; relations: Record
       <h2 className="">오늘 뭐 입지?</h2>
       <Weather onTempChange={setTemp}/>
       <AvataArea>
-        <img src="/image/avata.svg" alt="avata" />
+        <img src="./image/avata.svg" alt="avata" />
         {temp !== null && temp < 17 && (
           <LookupArea>
             <img src="./image/top/tshist_long.svg" alt="긴소매" />
@@ -85,7 +85,7 @@ function handleBottomColor(name: string, value: { hex: string; relations: Record
             <RoundedButton
               key={name}
               backgroundColor={value.hex}
-              onClick={() => handleTopColor(name, value)}
+              onClick={() => handleTopColor(value)}
             >
               {outfit.topButtonNames[name]}
             </RoundedButton>
@@ -97,7 +97,7 @@ function handleBottomColor(name: string, value: { hex: string; relations: Record
             <RoundedButton
               key={name}
               backgroundColor={value.hex}
-              onClick={() => handleBottomColor(name, value)}
+              onClick={() => handleBottomColor(value)}
             >
               {outfit.bottomButtonNames[name]}
             </RoundedButton>
